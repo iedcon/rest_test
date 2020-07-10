@@ -36,15 +36,7 @@ $ pytest test_main.py -vv (ordering, option)
     * response
 ```
       [
-          {
-              "id": 1,
-              "name_ko": "원티드랩",
-              "name_en": "Wantedlab",
-              "name_ja": "",
-              "tag_ko": "태그_4|태그_20|태그_16",
-              "tag_en": "tag_4|tag_20|tag_16",
-              "tag_ja": ""
-          },
+          <Company Object>,
           ...
       ]
 ```
@@ -57,15 +49,7 @@ $ pytest test_main.py -vv (ordering, option)
     * response
 ```
       [
-          {
-              "id": 1,
-              "name_ko": "원티드랩",
-              "name_en": "Wantedlab",
-              "name_ja": "",
-              "tag_ko": "태그_4|태그_20|태그_16",
-              "tag_en": "tag_4|tag_20|tag_16",
-              "tag_ja": ""
-          },
+          <Company Object>,
           ...
       ]
 ```
@@ -76,15 +60,7 @@ $ pytest test_main.py -vv (ordering, option)
     * example: /add_tag/1 (payload- {"tag":  "태그_99", "lang": "ko"})
     * response
 ```
-      {
-        "id": 1,
-        "name_ko": "원티드랩",
-        "name_en": "Wantedlab",
-        "name_ja": "",
-        "tag_ko": "태그_4|태그_20|태그_16|태그_99",
-        "tag_en": "tag_4|tag_20|tag_16",
-        "tag_ja": ""
-      }
+      <Company Object>
 ```
 4. 태그 삭제
 
@@ -93,13 +69,5 @@ $ pytest test_main.py -vv (ordering, option)
     * example: /del_tag/1 (payload- {"tag":  "태그_99", "lang": "ko"})
     * response
 ```
-      {
-        "id": 1,
-        "name_ko": "원티드랩",
-        "name_en": "Wantedlab",
-        "name_ja": "",
-        "tag_ko": "태그_4|태그_20|태그_16",
-        "tag_en": "tag_4|tag_20|tag_16",
-        "tag_ja": ""
-      }
+      <Company Object>
 ```
