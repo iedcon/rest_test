@@ -90,7 +90,7 @@ $ pytest test_main.py -vv (ordering, option)
 
     * endpoint: PUT /del_tag/\<int:tag>
     * payload: tag-태그 lang-태그 언어
-    * example: /add_tag/1 (payload- {"tag":  "태그_99", "lang": "ko"})
+    * example: /del_tag/1 (payload- {"tag":  "태그_99", "lang": "ko"})
     * response
 ```
       {
